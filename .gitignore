@@ -1,3 +1,7 @@
-/.idea
-/**/tardet
-/**/*.iml
+.idea/
+.settings/
+test/
+**/tardet/
+**/*.iml
+.classpath
+.project
