@@ -2,7 +2,11 @@
 .gwt/
 .settings/
 test/
+extras/
+gen/
+lib/
 **/target/
 **/*.iml
+**/*.jar
 .classpath
 .project
