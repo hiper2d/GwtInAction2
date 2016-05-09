@@ -16,9 +16,13 @@
 
     <modules>
         <module>gwtia-ch02-helloworld</module>
+        <module>gwtia-ch07-gwtrpc</module>
+        <module>gwtia-ch07-gwtrpc-xsrf</module>
+        <module>gwtia-ch10-data-presentation-widgets</module>
         <module>gwtia-ch16-di</module>
         <module>gwtia-ch17-deferredbinding</module>
         <module>gwtia-ch18-generators</module>
+        <module>gwtia-ch19-metrics-splitting</module>
     </modules>
 
     <pluginRepositories>
@@ -30,6 +34,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.twitter4j</groupId>
+                <artifactId>twitter4j-core</artifactId>
+                <version>4.0.4</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.gwt.inject</groupId>
                 <artifactId>gin</artifactId>

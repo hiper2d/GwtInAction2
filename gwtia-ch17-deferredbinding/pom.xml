@@ -10,7 +10,9 @@
 	<name>gwtia-ch17-deferredbinding</name>
 
 	<properties>
-		<gwt.module.name>com.manning.gwtia.ch17.Examples</gwt.module.name>
+		<gwt.main.module.name>com.manning.gwtia.ch17.Examples</gwt.main.module.name>
+		<gwt.style.module.name>com.manning.gwtia.ch17.client.computestyle.ComputeStyleExample</gwt.style.module.name>
+		<gwt.weekend.module.name>com.manning.gwtia.ch17.client.weekend.WeekendMode</gwt.weekend.module.name>
 	</properties>
 
 	<description>GWTiA example looking at deferred binding</description>
@@ -38,10 +40,26 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>gwt-maven-plugin</artifactId>
-			</plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt.version}</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <modules>
+                                <param>${gwt.main.module.name}</param>
+                                <param>${gwt.style.module.name}</param>
+                                <param>${gwt.weekend.module.name}</param>
+                            </modules>
+                        </configuration>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
