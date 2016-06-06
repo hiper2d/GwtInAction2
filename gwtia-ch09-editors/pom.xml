@@ -4,10 +4,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.manning.gwtia</groupId>
-	<artifactId>gwtia-ch09-editor</artifactId>
+	<artifactId>gwtia-ch09-editors</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>gwtia-ch09-editor</name>
+	<name>gwtia-ch09-editors</name>
 
 	<parent>
 		<groupId>com.hiper2d</groupId>

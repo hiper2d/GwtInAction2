@@ -3,7 +3,7 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui"
 	xmlns:u="urn:import:com.google.gwt.editor.ui.client">
 	
-	<ui:style src="../common.css"/>
+	<ui:style src="../../../../../../../resources/com/manning/gwtia/ch09/client/common.css"/>
 	<g:HTMLPanel>
 		<g:FlowPanel addStyleNames="{style.flowpanel}" height="123px">
 			<g:FlowPanel>

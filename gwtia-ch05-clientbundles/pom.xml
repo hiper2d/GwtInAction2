@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>gwtia-ch05-clientbundles</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>gwtia-ch05-clientbundles</name>
+
+    <parent>
+        <groupId>com.hiper2d</groupId>
+        <artifactId>gwtinaction</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <gwt.main.module.name>com.manning.gwtia.ch05.Examples</gwt.main.module.name>
+        <gwt.cssresource.module.name>com.manning.gwtia.ch05.client.cssresource.CssResourceExample</gwt.cssresource.module.name>
+        <gwt.dataresource.module.name>com.manning.gwtia.ch05.client.dataresource.DataResourceExample</gwt.dataresource.module.name>
+        <gwt.imageresource.module.name>com.manning.gwtia.ch05.client.imageresource.ImageResourceExample</gwt.imageresource.module.name>
+        <gwt.textresource.module.name>com.manning.gwtia.ch05.client.textresource.TextResourceExample</gwt.textresource.module.name>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-dev</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt.version}</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <modules>
+                                <param>${gwt.main.module.name}</param>
+                                <param>${gwt.cssresource.module.name}</param>
+                                <param>${gwt.dataresource.module.name}</param>
+                                <param>${gwt.imageresource.module.name}</param>
+                                <param>${gwt.textresource.module.name}</param>
+                            </modules>
+                        </configuration>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

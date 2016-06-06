@@ -18,8 +18,14 @@
 
     <modules>
         <module>gwtia-ch02-helloworld</module>
+        <module>gwtia-ch03-basicproject</module>
+        <module>gwtia-ch03-historyhelper</module>
+        <module>gwtia-ch04-widgets</module>
+        <module>gwtia-ch05-clientbundles</module>
+        <module>gwtia-ch06-uibinder</module>
         <module>gwtia-ch07-gwtrpc</module>
         <module>gwtia-ch07-gwtrpc-xsrf</module>
+        <module>gwtia-ch08-requestfactory</module>
         <module>gwtia-ch09-editors</module>
         <module>gwtia-ch10-data-presentation-widgets</module>
         <module>gwtia-ch16-di</module>

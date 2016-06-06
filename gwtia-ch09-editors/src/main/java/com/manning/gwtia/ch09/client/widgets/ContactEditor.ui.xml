@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui"
 	xmlns:dt='urn:import:com.manning.gwtia.ch09.client.views'>
-	<ui:style src="../common.css">
+	<ui:style src="../../../../../../../resources/com/manning/gwtia/ch09/client/common.css">
 	  	.idField{
 			display : inline;
       		padding-right: 25px;
